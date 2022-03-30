@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A site that lets you find your happiness (ha-play-ness, really)!"
+    />
+    <title>Yep, the quest is still on</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              yellow: "#FBC638",
+              newblue: "#518AAE",
+              smi1: "#460AC4",
+              smi1hover: "#39128B",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+
+  <body class="h-screen w-screen flex items-center justify-center">
+    <div class="block m-auto">
+      <h3 class="mx-4" style="text-align: center; margin-top: 0.1rem">
+        You didn't just click another button!? But I'm glad you're still here.
+      </h3>
+      <img
+        style="height: auto; width: 100%; border-radius: 1.5rem; padding: 20px"
+        src="resources/holyHeck.jpg"
+      />
+      <button
+        onmouseover="this.style.boxShadow='6px 6px 0 #ffffff'"
+        onmouseleave="this.style.boxShadow='6px 6px 0 #518AAE'"
+        onclick="window.location.href='page4.html'"
+        style="box-shadow: 6px 6px 0 #518aae"
+        class="font-bold text-xl w-2/3 block mx-auto tracking-tighter border-solid border-2 border-newblue pt-2 pb-2 m-auto bg-white hover:bg-newblue text-newblue hover:text-white"
+      >
+        I did. Will click this too
+      </button>
+    </div>
+  </body>
+</html>
